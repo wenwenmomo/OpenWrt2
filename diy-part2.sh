@@ -52,7 +52,7 @@ git clone --depth 1 https://github.com/coolsnowwolf/luci deng-tmp10 && mv deng-t
 
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 10.10.10.1）
 # sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
-
+wget https://raw.githubusercontent.com/pesa1234/packages/fix-tini-musl125/utils/tini/patches/002-fix_missing_basename.patch -P feeds/packages/utils/tini/patches/
 # Modify default theme（FROM uci-theme-bootstrap CHANGE TO luci-theme-material）
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
 
