@@ -138,7 +138,7 @@ jobs:
       if: (!cancelled())
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf packages
+        # rm -rf packages
         # rm -rf *.buildinfo
         rm -rf profiles.json
         rm -rf *.manifest
